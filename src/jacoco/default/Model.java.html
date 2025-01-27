@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Model.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">seminar4</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Model.java</span></div><h1>Model.java</h1><pre class="source lang-java linenums">public class Model implements ModelInterface {
+    /**
+     * Первый массив.
+     */
+    private int[] arrayOne;
+    /**
+     * Второй массив.
+     */
+    private int[] arrayTwo;
+
+    /**
+     * Конструктор объекта.
+     *
+     * @param firstArray значение первого массива.
+     * @param secondArray значение второго массива.
+     */
+<span class="fc" id="L17">    public Model(final int[] firstArray, final int[] secondArray) {</span>
+<span class="fc" id="L18">        arrayOne = firstArray;</span>
+<span class="fc" id="L19">        arrayTwo = secondArray;</span>
+<span class="fc" id="L20">    }</span>
+
+    /**
+     * Метод возвращает значение первого массива.
+     * @return первый массив.
+     */
+    @Override
+    public int[] getOneArray() {
+<span class="fc" id="L28">        return arrayOne;</span>
+    }
+
+    /**
+     * Метод устанавливает значение первого массива.
+     * @param value новое значение первого массива.
+     */
+    @Override
+    public void setOneArray(final int[] value) {
+<span class="fc" id="L37">        arrayOne = value;</span>
+<span class="fc" id="L38">    }</span>
+
+    /**
+     * Метод возвращает значение второго массива.
+     * @return второй массив.
+     */
+    @Override
+    public int[] getTwoArray() {
+<span class="fc" id="L46">        return arrayTwo;</span>
+    }
+
+    /**
+     * Метод устанавливает значение второго массива.
+     * @param value новое значение второго массива.
+     */
+    @Override
+    public void setTwoArray(final int[] value) {
+<span class="fc" id="L55">        arrayTwo = value;</span>
+<span class="fc" id="L56">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
